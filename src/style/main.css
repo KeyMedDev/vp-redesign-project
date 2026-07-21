@@ -1,0 +1,407 @@
+/* ===== Fuentes ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+
+/* ===== Variables ===== */
+:root {
+    --color-principal: #4f7a3b;
+    --color-principal-oscuro: #375528;
+    --color-acento: #e8b74d;
+    --color-texto: #1f2a1a;
+    --color-texto-suave: #5c6b57;
+    --color-fondo: #ffffff;
+    --color-fondo-suave: #f4f7f1;
+    --color-borde: #e3e8de;
+    --espaciado: 24px;
+    --radio: 14px;
+}
+
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--color-texto);
+    line-height: 1.7;
+    background-color: var(--color-fondo);
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* ===== Header y navegación ===== */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--color-borde);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px;
+    padding: 20px var(--espaciado);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--color-principal);
+}
+
+/* ===== Submenú desplegable ===== */
+.li-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background-color: var(--color-principal-oscuro);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(31, 42, 26, 0.25);
+    z-index: 20;
+}
+
+.li-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    display: block;
+    padding: 14px 20px;
+    color: #ffffff;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.submenu a:hover {
+    background-color: var(--color-principal);
+    color: #ffffff;
+}
+
+/* ===== Secciones generales ===== */
+section {
+    padding: 80px var(--espaciado);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section article {
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: var(--color-principal-oscuro);
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--color-texto-suave);
+    font-size: 16px;
+}
+
+/* ===== Hero moderno con imagen de fondo ===== */
+.hero {
+    position: relative;
+    max-width: none;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--espaciado);
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(31, 42, 26, 0.55), rgba(31, 42, 26, 0.75));
+    z-index: -1;
+}
+
+.hero-contenido {
+    color: #ffffff;
+    max-width: 800px;
+}
+
+.hero-contenido p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 650px;
+    margin: 0 auto 28px auto;
+    font-size: 21px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* ===== Botones ===== */
+.boton {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 14px 32px;
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.boton:hover {
+    background-color: #d9a637;
+    transform: translateY(-2px);
+}
+
+/* ===== Sección de dos columnas ===== */
+.dos-columnas {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    text-align: left;
+}
+
+.dos-columnas article {
+    flex: 1;
+    text-align: left;
+}
+
+.imagen-seccion {
+    flex: 1;
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--radio);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+/* ===== Imagen ancha entre secciones ===== */
+.imagen-ancha {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: var(--radio);
+    margin-bottom: 48px;
+}
+
+/* ===== Lista de valores ===== */
+.lista-valores {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.lista-valores li {
+    background-color: var(--color-fondo-suave);
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-principal-oscuro);
+}
+
+/* ===== Tarjetas de líneas de acción ===== */
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: stretch;
+    gap: 16px;
+}
+
+.tarjeta {
+    text-align: left;
+    background-color: var(--color-fondo-suave);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 18px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.tarjeta p {
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(31, 42, 26, 0.08);
+}
+
+/* ===== Proyectos ===== */
+.proyecto {
+    text-align: left;
+    border-bottom: 1px solid var(--color-borde);
+    padding: 24px 0;
+}
+
+.proyecto:last-child {
+    border-bottom: none;
+}
+
+.proyecto-final {
+    text-align: center;
+}
+
+.boton-ver-proyectos {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0 auto;
+}
+
+/* ===== Sección de contacto ===== */
+#contacto {
+    background-color: #f7f1e6;
+    max-width: none;
+}
+
+#contacto > article {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== Formulario de contacto ===== */
+#contacto form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 520px;
+    margin: 0 auto;
+    background-color: var(--color-fondo-suave);
+    padding: 32px;
+    border-radius: var(--radio);
+}
+
+#contacto label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+#contacto input,
+#contacto textarea {
+    padding: 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+#contacto button {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+/* ===== Footer ===== */
+footer p{
+    text-align: center;
+    padding: 28px;
+    background-color: var(--color-principal-oscuro);
+    color: #ffffffd0;
+    font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    .hero-contenido p {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .dos-columnas {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dos-columnas article {
+        text-align: center;
+    }
+}

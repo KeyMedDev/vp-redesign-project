@@ -3,195 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Vecinos Perú - Home</title>
+    <title>Vecinos Perú - Inicio</title>
+    <link rel="stylesheet" href="src/style/main.css">
 </head>
-<header class="header-principal">
-    <nav class="nav-contenedor">
-        <!-- Logo con resaltado en el nombre -->
-        <a href="#" class="logo">VECINOS<span>PERÚ</span></a>
-        
-        <!-- Menú de navegación -->
-        <ul class="menu-navegacion">
-            <li><a href="#" class="enlace-nav activo">Inicio</a></li>
-            <li><a href="#" class="enlace-nav">Nosotros</a></li>
-            <li><a href="#" class="enlace-nav">Líneas de Acción</a></li>
-            <li><a href="#" class="enlace-nav">Proyectos</a></li>
-            <li><a href="#" class="btn-contacto">Contáctanos</a></li>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="li-submenu">
+                <a href="src/pages/nosotros.html">Nosotros ▾</a>
+                <ul class="submenu">
+                    <li><a href="src/pages/nosotros.html#quienes-somos">Quiénes somos</a></li>
+                    <li><a href="src/pages/nosotros.html#vision">Visión</a></li>
+                    <li><a href="src/pages/nosotros.html#mision">Misión</a></li>
+                    <li><a href="src/pages/nosotros.html#fines-objetivos">Fines y Objetivos</a></li>
+                </ul>
+            </li>
+            <li><a href="src/pages/lineas-accion.html">Líneas de Acción</a></li>
+            <li class="li-submenu">
+                <a href="src/pages/proyectos.html">Proyectos ▾</a>
+                <ul class="submenu">
+                    <li><a href="src/pages/proyectos.html#vigentes">Proyectos Vigentes</a></li>
+                    <li><a href="src/pages/proyectos.html#cooperantes">Cooperantes</a></li>
+                    <li><a href="src/pages/proyectos.html#concluidos">Proyectos Concluidos</a></li>
+                </ul>
+            </li>
+            <li><a href="#contacto">Contáctanos</a></li>
         </ul>
     </nav>
 </header>
 <body>
     <main>
-        <section class="hero-section">
-            <article class="hero-content">
-                <h1>Desarrollo Sostenible para las Comunidades de los Andes</h1>
-                <p>Contribuimos al desarrollo rural del país mediante programas y proyectos que conlleven al desarrollo sustentable y sostenible de poblaciones menos favorecidas y vulnerables del país.</p>
-                <div class="hero-btns">
-                    <button class="btn-principal">Conoce más</button>
-                    <button class="btn-secundario">Nuestra Labor</button>
+        <section class="hero">
+            <img class="hero-img" src="src/assets/media/imgs/imgi_15_ImagendeWhatsApp2024-04-18alas18.36.29_a58e46ff.jpg" alt="Alpacas pastando en los Andes peruanos">
+            <div class="hero-overlay"></div>
+            <article class="hero-contenido">
+                <span class="etiqueta">Desde 1985</span>
+                <h1>Vecinos Perú</h1>
+                <p>Contribuimos al desarrollo rural del país mediante programas y proyectos que conlleven al desarrollo sustentable y sostenible de poblaciones menos favorecidas y vulnerables.</p>
+                <a class="boton" href="#quienes-somos">Conócenos</a>
+            </article>
+        </section>
+
+        <section id="quienes-somos" class="dos-columnas">
+            <article>
+                <h2>¿Quiénes somos?</h2>
+                <p>VECINOS PERÚ es una asociación civil sin fines de lucro, fundada en 1985, dedicada al desarrollo rural sostenible en la región andina. Inscrita en los Registros Públicos de Lima y Ayacucho, y en la Agencia Peruana de Cooperación Internacional (APCI), opera bajo las leyes peruanas sin afiliación política o religiosa.</p>
+            </article>
+            <img class="imagen-seccion" src="src/assets/media/imgs/imgi_16_ImagendeWhatsApp2024-04-30alas11.26.16_321aace5.jpg" alt="Alpacas pastando en Chivay, Arequipa">
+        </section>
+
+        <section id="valores">
+            <article>
+                <h2>Nuestros valores</h2>
+                <ul class="lista-valores">
+                    <li>Compromiso con el desarrollo</li>
+                    <li>Equidad y justicia</li>
+                    <li>Respeto a los DD.HH.</li>
+                    <li>Innovación y mejora continua</li>
+                    <li>Cooperación y solidaridad</li>
+                    <li>Cultura e identidad</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="lineas-accion">
+            <img class="imagen-ancha" src="https://images.pexels.com/photos/38295258/pexels-photo-38295258.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Alpacas en paisaje andino">
+            <article>
+                <h2>Líneas de Acción</h2>
+
+                <div class="grid-tarjetas">
+                <div class="tarjeta">
+                    <h3>Desarrollo Agrícola y Forestal</h3>
+                    <p>Cultivos alimenticios, frutales, agroforestería, reforestación, producción de forrajes, conservación de suelos, riego tecnificado, transformación primaria y agro industria.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Desarrollo Pecuario y Agroindustrial</h3>
+                    <p>Desarrollo ganadero de ovinos, vacunos, porcinos y camélidos sudamericanos; agroindustria de productos cárnicos, lácteos, lana, fibra y piel; producción de animales menores, producción de truchas en jaulas flotantes y apicultura.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Desarrollo Empresarial y Comercial</h3>
+                    <p>Organización, constitución y gestión empresarial, contabilidad, planes de negocio, estudios de mercados, cadenas productivas, plataforma de servicios para la producción y comercialización de productos agropecuarios.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Gestión de Recursos Naturales y Medio Ambiente</h3>
+                    <p>Organización y fortalecimiento de capacidades de Comités de Gestión de Microcuencas y Cuencas, manejo y conservación de la biodiversidad, aplicación de instrumentos de gestión ambiental, prevención al cambio climático.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Planes de Ordenamiento Territorial</h3>
+                    <p>Construcción participativa de estrategias de optimización del uso del territorio y de aprovechamiento de los recursos naturales, en función de las prioridades de desarrollo de los habitantes.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Planes de Desarrollo Urbano</h3>
+                    <p>Elaboración de instrumentos técnicos normativos y de gestión que se construyen de manera participativa y vislumbran el desarrollo urbano de ciudades y poblados de manera sostenible, ordenada y segura.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Gestión de Riesgos ante Desastres</h3>
+                    <p>Planificación concertada y participativa integral de reducción de las condiciones de riesgo antes de los desastres, medidas de prevención y mitigación, rehabilitación y reconstrucción.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Salud</h3>
+                    <p>Promoción, prevención y atención en salud sexual y reproductiva, atención oportuna del embarazo, parto y puerperio, así como atención primaria de la salud y nutrición infantil.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Desarrollo Social</h3>
+                    <p>Derechos humanos, afirmación de la identidad local, habilidades sociales, liderazgo, resolución de conflictos, ciudadanía, equidad de género y fortalecimiento de las organizaciones sociales de base.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Infraestructura Productiva y Básica Social</h3>
+                    <p>Fortalecimiento de capacidades locales, espacios de concertación y gestión de gobiernos locales, e incidencia en políticas públicas para el desarrollo.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Desarrollo de Agroindustria y Artesanía</h3>
+                    <p>A nivel de plantas artesanales y semi industriales de transformación de productos altoandinos, agrícolas, forestales y ganaderos.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Servicio de Consultoría</h3>
+                    <p>Formulación de proyectos, elaboración de expedientes técnicos y estudios definitivos para Gobiernos Locales y Regionales, y asesorías a empresas privadas.</p>
+                </div>
                 </div>
             </article>
-            <div class="container">
-                <section class="stats">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>+35</h3>
-                            <p>Años de Trayectoria</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>32+</h3>
-                            <p>Comunidades Socias</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>10K+</h3>
-                            <p>Familias Beneficiadas</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
         </section>
-        <section class="quienes-somos-seccion">
-            <article class="quienes-somos-contenedor">
-                <!-- Columna de Texto -->
-                <div class="quienes-somos-texto">
-                    <h2>Quiénes Somos</h2>
-                    <p><strong>VECINOS PERÚ</strong> es una asociación civil sin fines de lucro, fundada en 1985, dedicada al desarrollo rural sostenible en la región connectivity andina.</p>
-                    <p>Inscrita en los Registros Públicos de Lima y Ayacucho, y en la Agencia Peruana de Cooperación Internacional (APCI), opera bajo las leyes peruanas sin afiliación política o religiosa.</p>
+
+        <section id="proyectos">
+            <img class="imagen-ancha" src="https://images.pexels.com/photos/26795388/pexels-photo-26795388.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Llamas en Maras, Cusco">
+            <article>
+                <h2>Proyectos</h2>
+
+                <div class="proyecto">
+                    <h3>PAQU PURAKUNA - Sociedades alpaqueras</h3>
+                    <p>Angaraes, Huancavelica, Perú</p>
                 </div>
-        
-                <!-- Columna de Imagen -->
-                <div class="quienes-somos-imagen">
-                    <img src="https://www.peruforless.com/images/blog/fertile-green-lands-of-the-Sacred-Valley-in-Peru.jpg" alt="Campo agrícola en los Andes peruanos - Vecinos Perú">
+
+                <div class="proyecto">
+                    <h3>Fortalecimiento de Capacidades Técnico-Productivas y Comerciales de la Línea Artesanal Textil en Base a Fibra de Alpaca</h3>
+                    <p>Comunidad Campesina de Tinyacclla – Huando – Huancavelica.</p>
+                </div>
+
+                <div class="proyecto">
+                    <h3>"Organizaciones Alpaqueras Competitivas" - Paquuywaqkunapa Huñunakuynin Llallinapaq</h3>
+                    <p>Comunidades altoandinas de Huancavelica - Perú.</p>
+                </div>
+
+                <div class="proyecto">
+                    <h3>PAQU PURAKUNA - Sociedades alpaqueras. Año 2.</h3>
+                    <p>Angaraes, Huancavelica, Perú</p>
+                </div>
+
+                <div class="proyecto">
+                    <h3>Fortalecimiento de capacidades técnico-productivas de mujeres emprendedoras, en la línea artesanal textil en base a fibra de alpaca</h3>
+                    <p>Comunidad Campesina de Tinyacclla – Huando – Huancavelica.</p>
+                </div>
+
+                <div class="proyecto proyecto-final">
+                    <h3>Otros Proyectos de Vecinos Perú</h3>
+                    <p>Vecinos Perú ha participado en más de 70 proyectos y programas, y cada año emprende nuevos proyectos para impulsar el desarrollo de la comunidad.</p>
+                    <a class="boton boton-ver-proyectos" href="#proyectos">Ver proyectos</a>
                 </div>
             </article>
         </section>
-        <section class="valores-seccion">
-            <div class="valores-encabezado">
-                <h2>Nuestros Valores Institucionales</h2>
-            </div>
-        
-            <div class="valores-grid">
-                <!-- Caja 1 -->
-                <article class="valor-caja">
-                    <div class="valor-icono">🌱</div>
-                    <h5>Compromiso con el Desarrollo</h5>
-                </article>
-        
-                <!-- Caja 2 -->
-                <article class="valor-caja">
-                    <div class="valor-icono">⚖️</div>
-                    <h5>Equidad y Justicia</h5>
-                </article>
-        
-                <!-- Caja 3 -->
-                <article class="valor-caja">
-                    <div class="valor-icono">🛡️</div>
-                    <h5>Respeto a los DD.HH.</h5>
-                </article>
-        
-                <!-- Caja 4 -->
-                <article class="valor-caja">
-                    <div class="valor-icono">💡</div>
-                    <h5>Innovación y Mejora Continua</h5>
-                </article>
-        
-                <!-- Caja 5 -->
-                <article class="valor-caja">
-                    <div class="valor-icono">🤝</div>
-                    <h5>Cooperación y Solidaridad</h5>
-                </article>
-        
-                <!-- Caja 6 -->
-                <article class="valor-caja">
-                    <div class="valor-icono">🏔️</div>
-                    <h5>Cultura e Identidad</h5>
-                </article>
-            </div>
-        </section>
-        <section>
-            <h2>Lineas de Accion</h2>
-            <div>
-                <h3>Desarrollo Agrícola y Forestal</h3>
-                <p>Cultivos alimenticios, frutales, agroforestería, reforestación, producción de forrajes, conservación de suelos, riego tecnificado, transformación primaria y agro industria. </p>
-                <button>Ver más</button>
-            </div>
-            <div>
-                <h3>Desarrollo Pecuario y Agroindustrial</h3>
-                <p>Desarrollo ganadero de ovinos, vacunos, porcinos y camélidos sudamericanos; agroindustria de productos cárnicos, lácteos, lana, fibra y piel; producción de animales menores, producción de truchas en jaulas flotantes y apicultura</p>
-                <button>Ver más</button>
-            </div>
-            <div>
-                <h3>Desarrollo Empresarial y Comercial</h3>
-                <p>Organización, constitución y gestión empresarial, contabilidad, planes de negocio, estudios de mercados, cadenas productivas, plataforma de servicios para la producción y comercialización, oferta organizada de productos agropecuarios primarios, secundarios y transformados al mercado.</p>
-                <button>Ver más </button>
-            </div>
-        </section>
-        <section>
-            <h2>Proyectos</h2>
+
+        <section id="contacto">
             <article>
-                <h3>PAQU PURAKUNA - Sociedades alpaqueras</h3>
-                <p>Angaraes, Huancavelica, Perú</p>
-            </article>
-            <article>
-                <h3>Fortalecimiento de Capacidades Técnico-Productivas y Comerciales de la Línea Artesanal Textil en Base a Fibra de Alpaca</h3>
-                <p>Comunidad Campesina De Tinyacclla – Huando – Huancavelica.</p>
-            </article>
-            <article>
-                <h3>“Organizaciones Alpaqueras Competitivas" - Paquuywaqkunapa Huñunakuynin Llallinapaq</h3>
-                <p>Comunidades altoandinas de Huancavelica - Perú.</p>
-            </article>
-            <article>
-                <h3>PAQU PURAKUNA - Sociedades alpaqueras. Año 2.</h3>
-                <p>Angaraes, Huancavelica, Perú</p>
-            </article>
-            <article>
-                <h3>Fortalecimiento de capacidades técnico – productivas de mujeres emprendedoras, en la línea artesanal textil en base a fibra de alpaca</h3>
-                <p>Comunidad Campesina De Tinyacclla – Huando – Huancavelica.</p>
-            </article>
-            <article>
-                <h3>Otros Proyectos De Vecinos Perú</h3>
-                <p>Vecinos Perú ha participado en más de 70 proyectos y programas, y cada año emprende nuevos proyectos para impulsar el desarrollo de la comunidad.</p>
-            </article>
-            <button>Ver Proyectos</button>
-        </section>
-        <section>
-            <article>
-                <h2>Contactanos</h2>
-                <form action="#" method="POST">
-                    <div>
-                      <div>
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" placeholder="Ingresa tu E-mail" required>
-                      </div>
-                      <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono (Ej. 987654321)">
-                      </div>
-                      <div>
-                        <label for="fecha">Fechas</label>
-                        <input type="date" id="fecha" name="fecha" placeholder="Ingresa la fecha">
-                      </div>
-                    </div>
-                    <div>
-                      <label for="mensaje">Mensaje</label>
-                      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mándanos un mensaje directo"></textarea>
-                    </div>
-                    <div>
-                      <button type="submit">CONTACTAR</button>
-                    </div>
-                  </form>
+                <h2>Contáctanos</h2>
+                <form>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+                    <button type="submit" class="boton">Contactar</button>
+                </form>
             </article>
         </section>
     </main>
     <footer>
-        <p>Vecinos Perú © 2026. Todos los derechos rese​rvados.</p>
+        <p>Vecinos Perú © 2026. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

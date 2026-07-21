@@ -1,0 +1,104 @@
+
+.lista-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.ficha-proyecto {
+    position: relative;
+    background-color: var(--color-fondo-suave);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 20px 24px;
+}
+
+.ficha-proyecto h3 {
+    font-size: 17px;
+    padding-right: 60px;
+}
+
+.ficha-proyecto p {
+    font-size: 14.5px;
+    margin-top: 6px;
+}
+
+.detalle-financiamiento {
+    color: var(--color-principal-oscuro);
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.codigo {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    background-color: var(--color-principal);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.grid-cooperantes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.grid-cooperantes span {
+    background-color: var(--color-fondo-suave);
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    color: var(--color-texto);
+}
+
+.acordeon {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.acordeon details {
+    background-color: var(--color-fondo-suave);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 18px 22px;
+}
+
+.acordeon summary {
+    cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-principal-oscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acordeon summary::-webkit-details-marker {
+    display: none;
+}
+
+.cantidad {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12.5px;
+    background-color: var(--color-principal);
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.acordeon .lista-simple {
+    margin-top: 18px;
+}

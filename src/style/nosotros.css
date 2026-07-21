@@ -1,0 +1,37 @@
+
+#fines-objetivos article + article {
+    margin-top: 90px;
+}
+
+#fines-objetivos .tarjeta {
+    justify-content: center;
+}
+
+#fines-objetivos .tarjeta p {
+    font-size: 14.5px;
+}
+
+#quienes-somos p:first-of-type {
+    font-size: 17px;
+    color: var(--color-texto);
+}
+
+#vision.dos-columnas,
+#mision.dos-columnas {
+    align-items: stretch;
+}
+
+#vision .imagen-seccion,
+#mision .imagen-seccion {
+    height: 100%;
+    aspect-ratio: auto;
+}
+
+@media (max-width: 700px) {
+    #vision .imagen-seccion,
+    #mision .imagen-seccion {
+        height: auto;
+        max-height: 260px;
+        aspect-ratio: 4 / 3;
+    }
+}
