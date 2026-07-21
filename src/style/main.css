@@ -1,7 +1,7 @@
-/* ===== Fuentes ===== */
+/* FUENTE POPPINS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap');
 
-/* ===== Variables ===== */
+/* VARIABLES */
 :root {
     --color-principal: #4f7a3b;
     --color-principal-oscuro: #375528;
@@ -15,7 +15,7 @@
     --radio: 14px;
 }
 
-/* ===== Reset básico ===== */
+/* RESET Y ESTILOS GLOBALES */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ h1, h2, h3 {
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* ===== Header y navegación ===== */
+/* NAVEGACION */
 header {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(6px);
@@ -65,7 +65,7 @@ nav a:hover {
     color: var(--color-principal);
 }
 
-/* ===== Submenú desplegable ===== */
+/* MENU DESPLEGABLE */
 .li-submenu {
     position: relative;
 }
@@ -108,7 +108,7 @@ nav a:hover {
     color: #ffffff;
 }
 
-/* ===== Secciones generales ===== */
+/* ESTILOS GENERALES */
 section {
     padding: 80px var(--espaciado);
     max-width: 1000px;
@@ -144,7 +144,7 @@ p {
     font-size: 16px;
 }
 
-/* ===== Hero moderno con imagen de fondo ===== */
+/* HERO CON EL FONDO DE IMG */
 .hero {
     position: relative;
     max-width: none;
@@ -198,7 +198,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* ===== Botones ===== */
+/* BOTONES */
 .boton {
     display: inline-block;
     margin-top: 8px;
@@ -219,7 +219,7 @@ p {
     transform: translateY(-2px);
 }
 
-/* ===== Sección de dos columnas ===== */
+/* SECCION DE COLUMNAS */
 .dos-columnas {
     display: flex;
     align-items: center;
@@ -241,7 +241,7 @@ p {
     aspect-ratio: 4 / 3;
 }
 
-/* ===== Imagen ancha entre secciones ===== */
+/* IMG SEPARADOR */
 .imagen-ancha {
     width: 100%;
     max-height: 320px;
@@ -250,7 +250,7 @@ p {
     margin-bottom: 48px;
 }
 
-/* ===== Lista de valores ===== */
+/* SECCION DE VALORES */
 .lista-valores {
     list-style: none;
     display: flex;
@@ -268,7 +268,7 @@ p {
     color: var(--color-principal-oscuro);
 }
 
-/* ===== Tarjetas de líneas de acción ===== */
+/* SECCION - TARJETAS DE LINEAS DE ACCION */
 .grid-tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -303,7 +303,7 @@ p {
     box-shadow: 0 10px 24px rgba(31, 42, 26, 0.08);
 }
 
-/* ===== Proyectos ===== */
+/* SECCION DE PROYECTOS */
 .proyecto {
     text-align: left;
     border-bottom: 1px solid var(--color-borde);
@@ -324,7 +324,7 @@ p {
     margin: 40px auto 0 auto;
 }
 
-/* ===== Sección de contacto ===== */
+/* SCCION DE CONTACTO */
 #contacto {
     background-color: #f7f1e6;
     max-width: none;
@@ -335,7 +335,7 @@ p {
     margin: 0 auto;
 }
 
-/* ===== Formulario de contacto ===== */
+/* FORMULARIO */
 #contacto form {
     text-align: left;
     display: flex;
@@ -369,7 +369,7 @@ p {
     margin-top: 20px;
 }
 
-/* ===== Footer ===== */
+/* FOOTER */
 footer p{
     text-align: center;
     padding: 28px;
@@ -378,7 +378,7 @@ footer p{
     font-size: 14px;
 }
 
-/* ===== Responsive ===== */
+/* ESTILO RESPONSIVO */
 @media (max-width: 700px) {
     h1 {
         font-size: 42px;
