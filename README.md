@@ -4,7 +4,7 @@ Manual técnico del proyecto de rediseño del sitio web de **Vecinos Perú**, as
 
 ## 1. Descripción general
 
-Sitio web institucional estático que presenta a la organización, sus líneas de acción, proyectos y un formulario de contacto. No requiere backend, framework ni proceso de build: es HTML, CSS y JavaScript servidos directamente.
+Sitio web institucional estático que presenta a la organización, sus líneas de acción, proyectos y un formulario de contacto. No requiere backend, framework ni proceso de build: es HTML y CSS.
 
 ## 2. Stack tecnológico
 
