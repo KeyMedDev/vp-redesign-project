@@ -114,34 +114,10 @@ Definido mediante variables CSS en `src/style/main.css`:
 - `src/script/main.js` **está vacío**. No hay lógica implementada para: envío del formulario de contacto, apertura/cierre de submenús en móvil, ni interactividad adicional.
 - El formulario de `contactanos.html` no tiene `action` ni `method`, ni manejador JS: actualmente **no envía datos a ningún destino**.
 - La carpeta `src/assets/media/icons/` existe pero está vacía.
-- Varias imágenes (`lineas-accion`, `proyectos`, secciones de `nosotros.html`) se cargan desde **Pexels vía URL externa**, lo que implica dependencia de conexión a internet y de la disponibilidad de ese CDN en producción. Se recomienda descargar y alojar localmente esos recursos antes de publicar el sitio.
-- No existe favicon, `robots.txt`, `sitemap.xml` ni metaetiquetas SEO/Open Graph.
-- No hay manejo de accesibilidad adicional más allá de los `alt` en imágenes (sin `aria-*` en el menú desplegable).
 
-## 8. Cómo ejecutar el proyecto localmente
-
-Al no requerir build, alcanza con servir los archivos estáticos:
-
-**Opción A — abrir directamente:**
-Abrir `index.html` en el navegador (algunas rutas relativas funcionan bien vía `file://`, pero se recomienda usar un servidor local para evitar restricciones del navegador).
-
-**Opción B — servidor local simple (recomendado):**
-```bash
-# Con Python
-python -m http.server 8000
-
-# Con Node (npx, sin instalación previa)
-npx serve .
-```
-Luego abrir `http://localhost:8000`.
-
-## 9. Cómo agregar una nueva página
+## 8. Cómo agregar una nueva página
 
 1. Crear el archivo `.html` dentro de `src/pages/`.
 2. Copiar el bloque `<header><nav>...</nav></header>` desde una página existente y agregar el nuevo enlace en **todas** las páginas (incluido `index.html`).
 3. Enlazar `../style/main.css` y, si corresponde, un CSS propio `../style/<nombre>.css`.
 4. Usar las clases del sistema de diseño existentes (`.dos-columnas`, `.tarjeta`, `.boton`, etc.) antes de crear estilos nuevos, para mantener consistencia visual.
-
-## 10. Despliegue
-
-Al ser un sitio 100% estático, puede desplegarse en cualquier hosting de archivos estáticos (GitHub Pages, Netlify, Vercel, Cloudflare Pages, S3, etc.) sin pasos de build. Antes de desplegar a producción se recomienda resolver los puntos listados en la sección [7. Estado actual / pendientes conocidos](#7-estado-actual--pendientes-conocidos), en particular alojar localmente las imágenes externas y completar `main.js` para el formulario de contacto.
