@@ -76,14 +76,14 @@ Definido mediante variables CSS en `src/style/main.css`:
 
 ```css
 :root {
-    --color-principal: #4f7a3b;       /* Verde institucional */
-    --color-principal-oscuro: #375528;
-    --color-acento: #e8b74d;          /* Dorado/acento */
-    --color-texto: #1f2a1a;
-    --color-texto-suave: #5c6b57;
-    --color-fondo: #ffffff;
-    --color-fondo-suave: #f4f7f1;
-    --color-borde: #e3e8de;
+    --color-principal: #4f7a3b;       /* Verde */
+    --color-principal-oscuro: #375528; /* Verde oscuro */
+    --color-acento: #e8b74d;          /* Dorado */
+    --color-texto: #1f2a1a;           /* Verde casi negro */
+    --color-texto-suave: #5c6b57;     /* Verde grisáceo */
+    --color-fondo: #ffffff;           /* Blanco */
+    --color-fondo-suave: #f4f7f1;     /* Blanco verdoso */
+    --color-borde: #e3e8de;           /* Gris verdoso claro */
     --espaciado: 24px;
     --radio: 14px;
 }
