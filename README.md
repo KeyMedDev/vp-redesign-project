@@ -1,10 +1,10 @@
-# Vecinos Perú — Sitio Web Institucional
+# Vecinos Perú — Sitio Web 
 
 Manual técnico del proyecto de rediseño del sitio web de **Vecinos Perú**, asociación civil sin fines de lucro dedicada al desarrollo rural sostenible en la región andina del Perú desde 1985.
 
 ## 1. Descripción general
 
-Sitio web institucional estático (multi-página) que presenta a la organización, sus líneas de acción, proyectos y un formulario de contacto. No requiere backend, framework ni proceso de build: es HTML, CSS y JavaScript servidos directamente.
+Sitio web institucional estático que presenta a la organización, sus líneas de acción, proyectos y un formulario de contacto. No requiere backend, framework ni proceso de build: es HTML, CSS y JavaScript servidos directamente.
 
 ## 2. Stack tecnológico
 
@@ -13,9 +13,7 @@ Sitio web institucional estático (multi-página) que presenta a la organizació
 | Marcado | HTML5 (semántico: `header`, `main`, `section`, `article`, `footer`) |
 | Estilos | CSS3 puro, con variables CSS (`:root`) y `@media queries` |
 | Tipografías | Google Fonts (`Poppins`, `Inter`) vía `@import` |
-| Interactividad | JavaScript (`src/script/main.js`) — **archivo presente pero vacío** |
-| Imágenes | Locales (`src/assets/media/imgs`) y remotas desde Pexels (CDN externo) |
-| Build tools | Ninguna. No hay `package.json`, gestor de paquetes ni bundler |
+| Imágenes | Locales (`src/assets/media/imgs`) |
 
 No hay dependencias de terceros que instalar: el proyecto se ejecuta abriendo los archivos HTML directamente o sirviéndolos con cualquier servidor estático.
 
