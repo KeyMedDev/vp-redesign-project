@@ -1,7 +1,7 @@
-/* trae la tipografia poppins desde google fonts */
+/* FUENTE POPPINS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap');
 
-/* variables para colores reutilizables */
+/* VARIABLES */
 :root {
     --color-principal: #4f7a3b;
     --color-principal-oscuro: #375528;
@@ -15,14 +15,13 @@
     --radio: 14px;
 }
 
-/* quita los estilos que ponen los navegador */
+/* RESET Y ESTILOS GLOBALES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* estilos generales para todo el cuerpo de la pagina */
 body {
     font-family: 'Inter', Arial, sans-serif;
     color: var(--color-texto);
@@ -30,12 +29,11 @@ body {
     background-color: var(--color-fondo);
 }
 
-/* define la tipografia para los titulos */
 h1, h2, h3 {
     font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* barra de navegacion */
+/* NAVEGACION */
 header {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(6px);
@@ -45,7 +43,6 @@ header {
     z-index: 10;
 }
 
-/* lista de enlaces de la navegacion */
 nav ul {
     list-style: none;
     display: flex;
@@ -55,7 +52,6 @@ nav ul {
     padding: 20px var(--espaciado);
 }
 
-/* estilo de cada enlace de la navegacion */
 nav a {
     text-decoration: none;
     color: var(--color-texto);
@@ -65,17 +61,15 @@ nav a {
     transition: color 0.2s ease;
 }
 
-/* cambia el color del enlace al pasar el raton */
 nav a:hover {
     color: var(--color-principal);
 }
 
-/* elemento de la lista que contiene submenu */
+/* MENU DESPLEGABLE */
 .li-submenu {
     position: relative;
 }
 
-/* menu que se despliega */
 .submenu {
     display: none;
     position: absolute;
@@ -89,22 +83,18 @@ nav a:hover {
     z-index: 20;
 }
 
-/* muestra el submenu cuando pasas el raton por el elemento padre */
 .li-submenu:hover .submenu {
     display: block;
 }
 
-/* cada elemento dentro del submenu */
 .submenu li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* quita el borde del ultimo elemento del submenu */
 .submenu li:last-child {
     border-bottom: none;
 }
 
-/* enlaces dentro del submenu */
 .submenu a {
     display: block;
     padding: 14px 20px;
@@ -113,25 +103,22 @@ nav a:hover {
     white-space: nowrap;
 }
 
-/* color de fondo para el enlace del submenu al pasar el raton */
 .submenu a:hover {
     background-color: var(--color-principal);
     color: #ffffff;
 }
 
-/* estilos para las secciones principales de la pagina */
+/* ESTILOS GENERALES */
 section {
     padding: 80px var(--espaciado);
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* centra el texto de los articulos dentro de las secciones */
 section article {
     text-align: center;
 }
 
-/* estilo para el titulo mas grande */
 h1 {
     font-size: 72px;
     font-weight: 700;
@@ -139,7 +126,6 @@ h1 {
     line-height: 1.1;
 }
 
-/* estilo para los subtitulos */
 h2 {
     font-size: 34px;
     font-weight: 700;
@@ -147,20 +133,18 @@ h2 {
     color: var(--color-principal-oscuro);
 }
 
-/* estilo para titulos mas pequenos */
 h3 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-/* estilo para los parrafos de texto */
 p {
     color: var(--color-texto-suave);
     font-size: 16px;
 }
 
-/* seccion principal de bienvenida con imagen de fondo */
+/* HERO CON EL FONDO DE IMG */
 .hero {
     position: relative;
     max-width: none;
@@ -172,7 +156,6 @@ p {
     overflow: hidden;
 }
 
-/* la imagen de fondo de la seccion hero */
 .hero-img {
     position: absolute;
     inset: 0;
@@ -182,7 +165,6 @@ p {
     z-index: -2;
 }
 
-/* capa oscura semitransparente sobre la imagen de fondo */
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -190,13 +172,11 @@ p {
     z-index: -1;
 }
 
-/* contenedor del texto en la seccion hero */
 .hero-contenido {
     color: #ffffff;
     max-width: 800px;
 }
 
-/* parrafo de texto en la seccion hero */
 .hero-contenido p {
     color: rgba(255, 255, 255, 0.9);
     max-width: 650px;
@@ -204,7 +184,6 @@ p {
     font-size: 21px;
 }
 
-/* pequena etiqueta de texto sobre el titulo principal */
 .etiqueta {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.15);
@@ -219,7 +198,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* estilo base para los botones */
+/* BOTONES */
 .boton {
     display: inline-block;
     margin-top: 8px;
@@ -235,13 +214,12 @@ p {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-/* efecto al pasar el raton sobre el boton */
 .boton:hover {
     background-color: #d9a637;
     transform: translateY(-2px);
 }
 
-/* contenedor para un diseno de dos columnas */
+/* SECCION DE COLUMNAS */
 .dos-columnas {
     display: flex;
     align-items: center;
@@ -249,13 +227,11 @@ p {
     text-align: left;
 }
 
-/* el articulo o texto dentro del diseno de dos columnas */
 .dos-columnas article {
     flex: 1;
     text-align: left;
 }
 
-/* la imagen en el diseno de dos columnas */
 .imagen-seccion {
     flex: 1;
     width: 100%;
@@ -265,7 +241,7 @@ p {
     aspect-ratio: 4 / 3;
 }
 
-/* una imagen ancha que sirve como separador visual */
+/* IMG SEPARADOR */
 .imagen-ancha {
     width: 100%;
     max-height: 320px;
@@ -274,7 +250,7 @@ p {
     margin-bottom: 48px;
 }
 
-/* lista que muestra los valores de la organizacion */
+/* SECCION DE VALORES */
 .lista-valores {
     list-style: none;
     display: flex;
@@ -283,7 +259,6 @@ p {
     gap: 16px;
 }
 
-/* cada elemento individual de la lista de valores */
 .lista-valores li {
     background-color: var(--color-fondo-suave);
     padding: 12px 22px;
@@ -293,7 +268,7 @@ p {
     color: var(--color-principal-oscuro);
 }
 
-/* cuadricula para organizar las tarjetas */
+/* SECCION - TARJETAS DE LINEAS DE ACCION */
 .grid-tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -301,7 +276,6 @@ p {
     gap: 16px;
 }
 
-/* estilo para cada tarjeta individual */
 .tarjeta {
     text-align: left;
     background-color: var(--color-fondo-suave);
@@ -314,61 +288,54 @@ p {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* titulo dentro de una tarjeta */
 .tarjeta h3 {
     font-size: 15px;
     margin-bottom: 6px;
 }
 
-/* parrafo de texto dentro de una tarjeta */
 .tarjeta p {
     font-size: 13.5px;
     line-height: 1.5;
 }
 
-/* efecto al pasar el raton sobre una tarjeta */
 .tarjeta:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 24px rgba(31, 42, 26, 0.08);
 }
 
-/* estilo para cada elemento de la lista de proyectos */
+/* SECCION DE PROYECTOS */
 .proyecto {
     text-align: left;
     border-bottom: 1px solid var(--color-borde);
     padding: 24px 0;
 }
 
-/* quita el borde inferior del ultimo proyecto */
 .proyecto:last-child {
     border-bottom: none;
 }
 
-/* bloque final en la seccion de proyectos */
 .proyecto-final {
     text-align: center;
 }
 
-/* boton especifico para ver mas proyectos */
 .boton-ver-proyectos {
     display: block;
     width: fit-content;
     margin: 40px auto 0 auto;
 }
 
-/* seccion de contacto con un color de fondo diferente */
+/* SCCION DE CONTACTO */
 #contacto {
     background-color: #f7f1e6;
     max-width: none;
 }
 
-/* articulo dentro de la seccion de contacto */
-#contacto>article {
+#contacto > article {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* el formulario de contacto */
+/* FORMULARIO */
 #contacto form {
     text-align: left;
     display: flex;
@@ -381,14 +348,12 @@ p {
     border-radius: var(--radio);
 }
 
-/* etiquetas de los campos del formulario */
 #contacto label {
     font-size: 14px;
     font-weight: 600;
     margin-top: 12px;
 }
 
-/* campos de texto y area de texto del formulario */
 #contacto input,
 #contacto textarea {
     padding: 12px;
@@ -399,14 +364,13 @@ p {
     background-color: #ffffff;
 }
 
-/* boton de enviar del formulario */
 #contacto button {
     align-self: flex-start;
     margin-top: 20px;
 }
 
-/* pie de pagina */
-footer p {
+/* FOOTER */
+footer p{
     text-align: center;
     padding: 28px;
     background-color: var(--color-principal-oscuro);
@@ -414,7 +378,7 @@ footer p {
     font-size: 14px;
 }
 
-/* estilos que se aplican solo en pantallas pequenas (moviles) */
+/* ESTILO RESPONSIVO */
 @media (max-width: 700px) {
     h1 {
         font-size: 42px;
